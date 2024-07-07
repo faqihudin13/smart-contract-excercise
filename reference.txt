@@ -1,0 +1,34 @@
+# docs web3 py
+https://web3py.readthedocs.io/en/stable/
+
+https://web3py.readthedocs.io/en/stable/
+https://ethereum.org/en/developers/docs/standards/tokens/erc-20/
+https://etherscan.io/token/0x514910771af9ca656af840dff83e8264ecf986ca
+
+https://ethereum.org/en/developers/docs/standards/tokens/erc-20/ cek opcode
+ethervm.io 
+
+https://youtube.com/watch?v=84Jdf3PBGMY&list=PLCwnLq3tOElrubfUWHa1qKrJv1apO8Aag&index=6&ab_channel=ConsoleCowboys
+
+
+# evm docs
+https://ethereum.org/en/developers/docs/evm/
+ethervm.io 
+
+# check hash 256 of function
+https://emn178.github.io/online-tools/keccak_256.html
+etherface.io/hash
+
+# search known signature
+https://www.4byte.directory/
+
+# brute force signature smart contract
+https://github.com/crytic/pyevmasm
+openchain.xyz/signature
+wget https://api.openchain.xyz/signature-database/v1/export
+
+# compile smart xontract solidity
+https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js
+
+# install gananche to local Ethereum
+https://archive.trufflesuite.com/ganache/
