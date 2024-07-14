@@ -1,0 +1,2 @@
+smart contract can communicate other smart contract
+exploiting the event, creating loop to withdraw all the fund.
