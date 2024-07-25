@@ -10,21 +10,21 @@ web3 = Web3(Web3.HTTPProvider(GANACHE))
 print(web3.is_connected())
 
 #Accounts for transactions
-first_account = "0x7A1E86F65f90298641011D121de2E5c95D5FdC94"
-first_account_private_key = "0x150132990404f6e66ed5cbbd3b61fd1aa14228ff1e06685bb76777628ce9f9e1"
-second_account = "0xFb3E3D3AF7B780cD229C39bc0fC268AAa44De9BF"
+first_account = "0x5Ad8c71cE55dd7a967A64EB10271fF2b95Fa30f3"
+first_account_private_key = "0x2b2c7414c57cdba13419b5e717b9b086576ae8cd0bf4d590d39d7a0189901694"
+second_account = "0xbA4e3fEB6309269539414b3C3A6109Afd941f5C6"
 
 #Build Transaction object
 transaction = {
-    'nonce': web3.eth.getTransactionCount(first_account),
+    'nonce': web3.eth.get_transaction_count(first_account),
     'to': second_account,
-    'value': web3.toWei(1, 'ether'),
+    'value': web3.to_wei(1, 'ether'),
     'gas': 3000000,
-    'gasPrice': web3.toWei('50', 'gwei')
+    'gasPrice': web3.to_wei('50', 'gwei')
 }
 
 #Sign and Send
-signed_transaction = web3.eth.account.signTransaction(transaction, first_account_private_key)
-transaction_hash = web3.eth.sendRawTransaction(signed_transaction.rawTransaction)
-print(web3.toHex(transaction_hash))
+signed_transaction = web3.eth.account.sign_transaction(transaction, first_account_private_key)
+transaction_hash = web3.eth.send_raw_transaction(signed_transaction.rawTransaction)
+print(web3.to_hex(transaction_hash))
 print(web3.eth.get_transaction(transaction_hash))
